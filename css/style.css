@@ -481,8 +481,8 @@ img {
   height: 100%;
   z-index: 999;
   background-color: var(--grey-opacity-40);
-  /*opacity: 0;
-    visibility: hidden;*/
+  opacity: 0;
+    visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,8 +495,8 @@ img {
   visibility: visible;
 }
 .modal {
-  /*visibility: hidden;
-    opacity: 0;*/
+  visibility: hidden;
+    opacity: 0;
   position: absolute;
   display: flex;
   flex-direction: column;
