@@ -49,24 +49,22 @@ img {
   display: block;
 }
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .container {
-
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding: 0 16px;
 }
 .column {
   flex-direction: column;
-
 }
-
 
 /* header */
 .header {
-  padding: 16px ;
+  padding: 16px 0;
   min-height: 56px;
   border-bottom: 1px solid var(--light-violette);
   box-shadow:
@@ -186,7 +184,6 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 72px;
   justify-self: center;
-
 }
 .btn-hero-img {
   display: block;
@@ -213,22 +210,18 @@ img {
 /* second section*/
 .second-section-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 .element-li {
-  width: calc((100% - 72px) / 4);
-}
-.icon {
+  height: calc((100% - 72px) / 4);
   display: flex;
-  background-color: var(--lightest-blue);
-  border: 1px solid var(--middle-grey);
-  border-radius: 4px;
-  margin-bottom: 8px;
-  padding: 24px 100px;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: 112px;
+  flex-direction: column;
+  text-align: center;
+
+}
+.icons-what-we-do {
+  display: none;
 }
 
 .title-second {
@@ -253,15 +246,16 @@ img {
   overflow: hidden;
 }
 .title-third {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--dark-blue);
   margin-bottom: 8px;
-  text-align: start;
+  text-align: center;
 }
 .wt-we-do-paragraph {
+  font-weight: 500;
   color: var(--lightest-dark-blue);
   text-align: start;
 }
@@ -751,6 +745,9 @@ img {
 }
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1157px) {
+  .section {
+    padding: 120px 0;
+  }
   .header {
     padding: 0;
     display: block;
@@ -826,11 +823,46 @@ img {
     background-color: var(--dark-light-blue);
     cursor: pointer;
   }
+
+  /*second section*/
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .element-li {
+    width: calc((100% - 72px) / 4);
+  }
+  .icons-what-we-do {
+    display: flex;
+    background-color: var(--lightest-blue);
+    border: 1px solid var(--middle-grey);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 112px;
+  }
+  .title-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: start;
+  }
+  .wt-we-do-paragraph {
+    font-weight: 400;
+    color: var(--lightest-dark-blue);
+    text-align: start;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2dppx) {
   .banner {
     display: flex;
-    justify-items:  center;
+    justify-items: center;
     background-color: var(--dark-blue);
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -841,7 +873,9 @@ img {
 }
 /*desktop*/
 @media (min-width: 1158px) {
-
+  .section {
+    padding: 120px 0;
+  }
   .header {
     padding: 0;
     display: block;
@@ -879,7 +913,6 @@ img {
     padding: 188px 0;
   }
   .container {
-
     margin: 0 auto;
     align-items: center;
     max-width: 1158px;
@@ -917,7 +950,43 @@ img {
     background-color: var(--dark-light-blue);
     cursor: pointer;
   }
+
+  /*second section*/
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .element-li {
+    width: calc((100% - 72px) / 4);
+  }
+  .icons-what-we-do {
+    display: flex;
+    background-color: var(--lightest-blue);
+    border: 1px solid var(--middle-grey);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 112px;
+  }
+  .title-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: start;
+  }
+  .wt-we-do-paragraph {
+    font-weight: 400;
+    color: var(--lightest-dark-blue);
+    text-align: start;
+  }
 }
+
+
 
 @media (min-width: 1158px) and (min-resolution: 2dppx) {
   .banner {
