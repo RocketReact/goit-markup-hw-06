@@ -113,7 +113,7 @@ img {
 /*overlay mobile menu*/
 .overlay {
   /*opacity: 0;
-  visibility: hidden;*/
+ visibility: hidden;*/
   padding: 0;
   margin: 0;
   position: fixed;
@@ -854,6 +854,9 @@ img {
     white-space: nowrap;
     margin-right: 120px;
   }
+  .contacts-info {
+    font-style: normal;
+  }
   .list-contacts {
     display: flex;
     flex-direction: column;
@@ -870,6 +873,14 @@ img {
 
   .contacts-info-a {
     font-size: 12px;
+  }
+  .contacts-info-a:hover,
+  .contacts-info-a:focus {
+    color: var(--dark-light-blue);
+  }
+  .contacts-info li {
+    list-style-type: none;
+    flex-shrink: 0;
   }
   .menu {
     margin: 0;
@@ -1077,14 +1088,9 @@ img {
     flex-grow: 0;
     margin-right: 76px;
   }
+
   .menu-burger {
     display: none;
-  }
-  .list-contacts {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-right: 156px;
   }
   .menu {
     margin: 0;
@@ -1095,6 +1101,30 @@ img {
     gap: 40px;
     max-height: 72px;
   }
+  .contacts-info {
+    font-style: normal;
+  }
+  .contacts-info-a {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--lightest-dark-blue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-info-a:hover,
+  .contacts-info-a:focus {
+    color: var(--dark-light-blue);
+  }
+  .contacts-info li {
+    list-style-type: none;
+    flex-shrink: 0;
+  }
+  .list-contacts {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 156px;
+  }
+
   .banner {
     min-height: 600px;
     max-width: 1440px;
