@@ -262,17 +262,26 @@ img {
 
 /* third section*/
 .title-section-third {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 72px;
 }
-
+.title-third-our-team {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: start;
+}
 .text-center {
   display: flex;
   flex-direction: column;
   padding: 32px 0;
   gap: 8px;
 }
-.text-center .title-third,
+.text-center .title-third-our-team,
 .text-center .wt-we-do-paragraph {
   text-align: center;
 }
@@ -309,8 +318,9 @@ img {
 }
 .team-grid {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  margin: 0 12px;
   overflow: hidden;
 }
 .fix-line-height {
@@ -734,7 +744,7 @@ img {
 }
 
 /*mobile*/
-@media (max-width: 430px) and (min-resolution: 2dppx) {
+@media (max-width: 581px) and (min-resolution: 2dppx) {
   .banner {
     max-height: 432px;
     background-color: var(--dark-blue);
@@ -744,9 +754,9 @@ img {
   }
 }
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 582px) and (max-width: 1157px) {
   .section {
-    padding: 120px 0;
+    padding: 96px 0;
   }
   .header {
     padding: 0;
@@ -828,35 +838,46 @@ img {
   .second-section-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  center;
     gap: 24px;
+    overflow: hidden;
+    margin: 0;
   }
   .element-li {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 26px) / 2);
   }
   .icons-what-we-do {
-    display: flex;
-    background-color: var(--lightest-blue);
-    border: 1px solid var(--middle-grey);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    padding: 24px 100px;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: 112px;
+    display: none;
   }
   .title-third {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: start;
   }
   .wt-we-do-paragraph {
-    font-weight: 400;
+    line-height: 1.5;
+    font-weight: 500;
     color: var(--lightest-dark-blue);
     text-align: start;
   }
+
+  /*third section*/
+  .team-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  center;
+    flex-basis: calc((100% - 24px) / 2);
+    gap: 24px;
+    overflow: hidden;
+    margin: 0;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2dppx) {
@@ -983,6 +1004,14 @@ img {
     font-weight: 400;
     color: var(--lightest-dark-blue);
     text-align: start;
+  }
+
+  /*third section*/
+  .team-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    overflow: hidden;
   }
 }
 
