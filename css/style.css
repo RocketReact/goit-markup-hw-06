@@ -218,7 +218,6 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
 .icons-what-we-do {
   display: none;
@@ -344,12 +343,14 @@ img {
 /* fourth section */
 .portfolio-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
+  justify-content: center;
+
 }
 .portfolio-li {
-  width: calc((100% - 48px) / 3);
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-li:hover {
@@ -840,7 +841,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
     gap: 24px;
     overflow: hidden;
     margin: 0;
@@ -871,13 +872,25 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
     flex-basis: calc((100% - 24px) / 2);
     gap: 24px;
     overflow: hidden;
     margin: 0;
   }
 
+  /*forth section*/
+  .portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-li {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2dppx) {
@@ -1013,9 +1026,20 @@ img {
     gap: 24px;
     overflow: hidden;
   }
+
+  /*forth section*/
+  .portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-li {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-
 
 @media (min-width: 1158px) and (min-resolution: 2dppx) {
   .banner {
