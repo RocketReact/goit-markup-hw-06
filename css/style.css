@@ -112,7 +112,8 @@ img {
 }
 /*overlay mobile menu*/
 .overlay {
-  /*display: none;*/
+  /*opacity: 0;
+  visibility: hidden;*/
   padding: 0;
   margin: 0;
   position: fixed;
@@ -130,7 +131,9 @@ img {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-  display: block;
+}
+.overlay:not(.active) .menu {
+  transition-delay: 0ms;
 }
 
 .menu {
