@@ -402,17 +402,14 @@ img {
 }
 .text-footer {
   text-align: center;
-
 }
 .bottom-logo {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: auto;
-
 }
 .span-second {
   color: var(--lightest-blue);
-
 }
 .footer-paragraph {
   width: 288px;
@@ -795,12 +792,24 @@ img {
   }
   .logo {
     flex-grow: 0;
-    margin-right: 76px;
+    white-space: nowrap;
+    margin-right: 120px
   }
   .list-contacts {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
+  }
+  .list-contacts-item {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    margin: -1px;
+  }
+
+  .contacts-info-a {
+    font-size: 12px;
   }
   .menu {
     display: flex;
@@ -942,7 +951,6 @@ img {
   }
   .text-footer {
     text-align: start;
-
   }
   .footer-social {
     display: flex;
@@ -950,7 +958,6 @@ img {
     text-align: start;
     align-self: flex-start;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2dppx) {
@@ -996,6 +1003,7 @@ img {
     font-weight: 500;
     padding: 24px 0;
     gap: 40px;
+
   }
   .banner {
     min-height: 600px;
@@ -1139,12 +1147,12 @@ img {
     align-self: flex-start;
     margin-right: 120px;
   }
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  gap: 0;
-}
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 0;
+  }
 }
 
 @media (min-width: 1158px) and (min-resolution: 2dppx) {
