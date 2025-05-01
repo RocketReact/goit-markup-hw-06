@@ -199,6 +199,15 @@ img {
   list-style-type: none;
   flex-shrink: 0;
 }
+.list-contacts-item {
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.list-contacts-item:nth-child(odd) {
+  margin-bottom: 25px;
+}
 
 
 
@@ -887,6 +896,9 @@ img {
     letter-spacing: 0.04em;
     margin: -1px;
   }
+  .list-contacts-item:nth-child(odd) {
+    margin-bottom: 0;
+  }
 
   .contacts-info-a {
     font-size: 12px;
@@ -1147,6 +1159,14 @@ img {
     align-items: center;
     margin-left: auto;
 
+  }
+  .list-contacts-item {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    margin: -1px;
+  }
+  .list-contacts-item:nth-child(odd) {
+    margin-bottom: 0;
   }
 
   .banner {
