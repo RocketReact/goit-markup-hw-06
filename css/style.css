@@ -113,8 +113,8 @@ img {
 
 /*overlay mobile menu*/
 .overlay {
-  opacity: 0;
-  visibility: hidden;
+  /*opacity: 0;
+  visibility: hidden;*/
   padding: 0;
   margin: 0;
   position: fixed;
@@ -139,7 +139,7 @@ img {
 .menu {
   position: fixed;
   top: 2px;
-  right: -100%;
+  /*right: -100%;*/
   z-index: 1000;
   margin-top: 70px;
   transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +147,7 @@ img {
   overflow: hidden;
 }
 .menu.is-open {
-  right: 0;
+  right: auto;
 }
 .navigation li {
   list-style-type: none;
@@ -631,8 +631,8 @@ img {
 }
 .modal-close {
   position: relative;
-  top: 32px;
-  left: 264px;
+  top: 24px;
+  left: 452px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -961,9 +961,7 @@ img {
     width: 408px;
     height: 584px;
   }
-  .modal-close {
-    left: 376px;
-  }
+
   .modal-paragraph {
     left: 44px;
     height: 25px;
