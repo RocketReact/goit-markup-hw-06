@@ -549,7 +549,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -601,7 +600,7 @@ img {
   flex-direction: column;
 
   left: 16px;
-  top:8px;
+  top: 8px;
   padding: 24px 16px;
   width: 288px;
   height: 623px;
@@ -629,6 +628,7 @@ img {
   padding: 0;
   gap: 8px;
   border-radius: 4px;
+  transform: translateY(-8px);
 }
 .modal-close {
   position: relative;
@@ -727,7 +727,7 @@ img {
   font-weight: 400;
 }
 .input-comment {
-  margin-bottom: 16px;
+  margin: 0;
   width: 100%;
 }
 .input-label-title {
@@ -762,8 +762,11 @@ img {
   position: absolute;
   margin-bottom: 24px;
   z-index: 1020;
+  height: 31px;
   width: 256px;
   top:496px;
+  left:31px;
+  transform: translateY(-7px);
 }
 .checkbox-input {
   color: var(--grey-opacity-40);
@@ -806,7 +809,7 @@ img {
 }
 .btn-form {
   position: absolute;
-  left: calc(50% - 169px/2 + 0.5px);
+  left: 75.5px;
   gap: 10px;
 
   justify-content: center;
@@ -817,7 +820,6 @@ img {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
