@@ -206,7 +206,7 @@ img {
 .overlay-social-icons {
   display: flex;
   position: relative;
-  top: 560px;
+  top: 536px;
   left: 16px;
   gap: 40px;
   justify-content: start;
