@@ -566,8 +566,8 @@ img {
 
 /*modal*/
 .modal-overlay {
-  /*opacity: 0;
-  visibility: hidden;*/
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -615,7 +615,6 @@ img {
   align-items: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
-
 }
 
 .modal-form {
@@ -646,8 +645,8 @@ img {
   cursor: pointer;
   padding: 0;
   transition:
-          background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-          border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover,
 .modal-close:focus {
@@ -675,7 +674,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-blue);
-
 }
 .input-group {
   width: 100%;
@@ -760,12 +758,11 @@ img {
 }
 .user-privacy-container {
   position: absolute;
-  margin-bottom: 24px;
   z-index: 1020;
   height: 31px;
   width: 256px;
-  top:496px;
-  left:31px;
+  top: 496px;
+  left: 31px;
   transform: translateY(-7px);
 }
 .checkbox-input {
@@ -809,14 +806,13 @@ img {
 }
 .btn-form {
   position: absolute;
+  top: 551px;
   left: 75.5px;
   gap: 10px;
-
   justify-content: center;
   align-items: flex-start;
   display: flex;
   padding: 16px 32px;
-  top: 551px;
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
@@ -913,8 +909,6 @@ img {
   .list-contacts {
     display: flex;
     align-items: center;
-
-
   }
   .list-contacts-item {
     font-size: 12px;
@@ -962,8 +956,39 @@ img {
   .footer-social {
     text-align: start;
   }
-
-
+  /*modal leave contacts*/
+  .modal {
+    width: 408px;
+    height: 584px;
+  }
+  .modal-close {
+    left: 376px;
+  }
+  .modal-paragraph {
+    left: 44px;
+    height: 25px;
+    width: 350px;
+  }
+  .modal-form {
+    transform: translateY(-11px);
+    width: 360px;
+  }
+  .modal {
+    padding: 24px;
+  }
+  .user-privacy-container {
+    height: 16px;
+    width: 360px;
+    top: 474px;
+    left: 40px;
+  }
+  .btn-form {
+    top: 511px;
+    left: 135.5px;
+  }
+  .page-wrapper {
+    left: -208px;
+  }
 }
 /*tablet*/
 @media (min-width: 582px) and (max-width: 1157px) {
@@ -1057,6 +1082,11 @@ img {
   }
   .footer-social {
     align-self: flex-start;
+  }
+
+  /*modal leave contacts*/
+  .page-wrapper {
+    top: -260px;
   }
 }
 
@@ -1171,6 +1201,11 @@ img {
   }
   .footer-social {
     gap: 0;
+  }
+
+  /*modal leave contacts*/
+  .page-wrapper {
+    top: -276px;
   }
 }
 
