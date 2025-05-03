@@ -575,8 +575,8 @@ img {
 
 /*modal*/
 .modal-overlay {
-  opacity: 0;
-  visibility: hidden;
+  /*opacity: 0;
+  visibility: hidden;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -596,18 +596,19 @@ img {
   visibility: visible;
 }
 .page-wrapper {
+  width: 288px;
+  height: 623px;
   position: relative;
-  top: -347px;
-  left: -148px;
+  top: -49px;
+  left: -16px;
 }
 .modal {
   /*visibility: hidden;
   opacity: 0;*/
 
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
-
   left: 16px;
   top: 8px;
   padding: 24px 16px;
@@ -639,9 +640,9 @@ img {
   transform: translateY(-8px);
 }
 .modal-close {
-  position: relative;
-  top: 24px;
-  left: 452px;
+  position: absolute;
+  top: 32px;
+  left: 256px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,12 +779,15 @@ img {
   color: var(--grey-opacity-40);
 }
 .checkbox-label {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--middle-grey);
 }
 .span-checkbox-svg {
+  margin-right: 5px;
   fill: transparent;
   display: inline-flex;
   align-items: center;
@@ -812,6 +816,7 @@ img {
 .privacy-policy-link {
   text-decoration: underline solid var(--blue);
   color: var(--blue);
+  margin-left: 24px;
 }
 .btn-form {
   position: absolute;
