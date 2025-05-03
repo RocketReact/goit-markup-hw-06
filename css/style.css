@@ -923,9 +923,7 @@ img {
     flex-direction: row;
     gap: 24px;
   }
-  .title-third {
-    text-align: start;
-  }
+
   .team-grid {
     flex-direction: row;
     gap: 24px;
