@@ -427,9 +427,12 @@ img {
   height: auto;
 }
 .portfolio-text {
+  display: flex;
+  flex-direction: column;
   padding: 32px 16px;
   border: 1px solid var(--light-violette);
   border-top: none;
+  gap:8px;
 }
 .portfolio-text h3,
 .portfolio-text p {
