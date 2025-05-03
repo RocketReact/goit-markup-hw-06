@@ -926,7 +926,7 @@ img {
 
   .team-grid {
     flex-direction: row;
-    gap: 24px;
+    gap: 64px 24px;
   }
   .row {
     flex-direction: row;
