@@ -972,6 +972,7 @@ img {
   .modal {
     width: 408px;
     height: 584px;
+    padding: 24px;
   }
   .modal-paragraph {
     left: 44px;
@@ -981,9 +982,6 @@ img {
   .modal-form {
     transform: translateY(-11px);
     width: 360px;
-  }
-  .modal {
-    padding: 24px;
   }
   .user-privacy-container {
     height: 16px;
@@ -996,7 +994,15 @@ img {
     left: 135.5px;
   }
   .page-wrapper {
-    left: -208px;
+    left: -17px;
+    width: 406px;
+    height: 584px;
+  }
+  .modal-close {
+    left: 376px;
+  }
+  .privacy-policy-link {
+    margin-left: 0;
   }
 }
 /*tablet*/
@@ -1099,7 +1105,7 @@ img {
 
   /*modal leave contacts*/
   .page-wrapper {
-    top: -260px;
+    top: 20px;
   }
 }
 
@@ -1220,7 +1226,7 @@ img {
 
   /*modal leave contacts*/
   .page-wrapper {
-    top: -276px;
+    top: 4px;
   }
 }
 
