@@ -1037,6 +1037,7 @@ img {
 
   /*second section*/
   .second-section-list {
+    gap: 72px 24px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
