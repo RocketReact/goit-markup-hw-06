@@ -923,6 +923,9 @@ img {
     flex-direction: row;
     gap: 24px;
   }
+  .title-third {
+   text-align: start;
+  }
 
   .team-grid {
     flex-direction: row;
@@ -957,7 +960,6 @@ img {
     width: 408px;
     height: 584px;
   }
-
   .modal-paragraph {
     left: 44px;
     height: 25px;
