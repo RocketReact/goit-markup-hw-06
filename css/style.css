@@ -169,12 +169,12 @@ img {
 .contacts-info {
   font-style: normal;
   position: fixed;
-  top: 370px;
+  top: 439px;
   left: 16px;
   display: none;
   width: 100%;
   z-index: 1000;
-  margin-top: 70px;
+
   transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
@@ -207,7 +207,7 @@ img {
 .overlay-social-icons {
   display: flex;
   position: relative;
-  top: 536px;
+  top: 560px;
   left: 16px;
   gap: 40px;
   justify-content: start;
@@ -625,7 +625,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
 }
-
 .modal-form {
   position: absolute;
   width: 256px;
@@ -656,6 +655,10 @@ img {
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fix-positions {
+  top: 24px;
+  left: 457px;
 }
 .modal-close:hover,
 .modal-close:focus {
