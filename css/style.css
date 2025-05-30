@@ -242,8 +242,7 @@ img {
   max-height: 160px;
   height: auto;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
-  justify-self: center;
+  margin: 0 auto 72px auto;
 }
 .btn-hero-img {
   display: block;
