@@ -60,6 +60,7 @@ img {
 }
 .column {
   flex-direction: column;
+  justify-items: center;
 }
 
 /* header */
@@ -384,6 +385,7 @@ img {
   gap: 72px;
   margin: 0 12px;
   overflow: hidden;
+
 }
 .fix-line-height {
   line-height: 1.11;
