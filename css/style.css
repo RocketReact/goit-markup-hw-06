@@ -879,7 +879,10 @@ img {
     font-size: 16px;
     padding: 24px 0;
   }
-  .navigation-a:hover::after {
+  .active {
+    color: var(--dark-light-blue)
+  }
+  .navigation-a.active::after {
     content: '';
     position: absolute;
     width: 100%;
