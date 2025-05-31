@@ -426,7 +426,7 @@ img {
 }
 .portfolio-grid img {
   width: 100%;
-  height: auto;
+  min-height: 280px;
 }
 .portfolio-text {
   display: flex;
@@ -1089,6 +1089,9 @@ img {
   /*forth section*/
   .portfolio-grid {
     gap: 72px 24px;
+  }
+  .portfolio-grid img {
+    max-width: 356px;
   }
   .portfolio-li {
     width: calc((100% - 24px) / 2);
