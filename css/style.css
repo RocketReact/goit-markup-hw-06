@@ -946,6 +946,9 @@ img {
   .title-third {
     text-align: start;
   }
+  .portfolio-grid-img img {
+    height: 300px;
+  }
 
   .team-grid {
     flex-direction: row;
